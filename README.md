@@ -112,7 +112,7 @@ Output:  Delete all the tickets with is_expired field set to True
 
 ##ScreenShots
 
-![imagename](/1.check_no_of_ticks_avail_at_time.png)
+![imagename](1.check_no_of_ticks_avail_at_time.PNG)
 
 
 
