@@ -109,14 +109,14 @@ Output: List of details of tickets booked for the given time
 ```
 ![imagename](6.view_list_by_timing.PNG)
 ```
-Endpoint: http://127.0.0.1:8000/expire
+Endpoint: http://127.0.0.1:8000/expire/
 Method: PUT
 Input: No Input
 Output: Update the is_expired field of tickets for timing 8 hours before the current timing 
 ```
 ![imagename](11.update_to_expired_befor_8hrs.PNG)
 ```
-Endpoint: http://127.0.0.1:8000/deleteexpired
+Endpoint: http://127.0.0.1:8000/deleteexpired/
 Method: DELETE
 Input: No Input
 Output:  Delete all the tickets with is_expired field set to True
