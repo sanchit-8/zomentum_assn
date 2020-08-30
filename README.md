@@ -56,18 +56,23 @@ Method: GET
 Input: time (yyyy-mm-ddThh:mm:ss) [hours in 24 hr format]
 Output: No of Tickets available for particular time
 ```
+![imagename](1.check_no_of_ticks_avail_at_time.PNG)
+![imagename](2.no_tickets_available_all_20_booked.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/view/
 Method: GET
 Input:No input
 Output: Details of all the tickets booked
 ```
+![imagename](3.view_all_tickets_booked.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/viewbyid/<ID>
 Method: GET
 Input: Unique Id of the booked ticket
 Output: Details of Ticket with the ID
 ```
+![imagename](4.view_ticket_by_id.PNG)
+![imagename](5.view_ticket_by_id_not_availabe.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/bookticket/
 Method: POST
@@ -78,6 +83,8 @@ Input:data= {
       }
 Output:  if successful : Details of the ticket booked otherwise { "status": "no tickets available"} 
 ```
+![imagename](7.Book_new_ticket.PNG)
+![imagename](7.book_ticket_for_time_not_available.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/updateticket/<ID>
 Method: PUT
@@ -85,34 +92,38 @@ Input: Unique Id of the booked ticket
       data ={ "timing" : "timing (yyyy-mm-ddThh:mm:ss)"}
 Output: { "status" : "update succefull" }
 ```
+![imagename](8.update_timing_of_ticket.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/deleteticket/<ID>
 Method: DELETE
 Input: Unique Id of the booked ticket
 Output: { "success": "delete successful" }
 ```
+![imagename](9.delete_ticket_by_id.PNG)
+![imagename](10.delete_ticket_not_found.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/viewbytime/<timings>
 Method: GET
 Input: timings (yyyy-mm-ddThh:mm:ss) [hours in 24 hr format]
 Output: List of details of tickets booked for the given time 
 ```
+![imagename](6.view_list_by_timing.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/expire
 Method: PUT
 Input: No Input
 Output: Update the is_expired field of tickets for timing 8 hours before the current timing 
 ```
+![imagename](11.update_to_expired_befor_8hrs.PNG)
 ```
 Endpoint: http://127.0.0.1:8000/deleteexpired
 Method: DELETE
 Input: No Input
 Output:  Delete all the tickets with is_expired field set to True
 ```
+![imagename](12.delete_expired_ticket.PNG)
 
-##ScreenShots
 
-![imagename](1.check_no_of_ticks_avail_at_time.PNG)
 
 
 
