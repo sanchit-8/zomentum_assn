@@ -107,7 +107,7 @@ Output: Update the is_expired field of tickets for timing 8 hours before the cur
 Endpoint: http://127.0.0.1:8000/deleteexpired
 Method: DELETE
 Input: No Input
-Output:  Delete all the tickets with is_expired filed set to True
+Output:  Delete all the tickets with is_expired field set to True
 ```
 
 
