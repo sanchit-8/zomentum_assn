@@ -28,6 +28,11 @@ You have to design a REST interface for a movie theatre ticket booking system. I
 3. Database used : sqlite3
 4. Postman for testing
 
+## Scheduler
+
+Scheduler is implemented using the backgroundscheduler from apschedule starts the jobs of marking the ticket as expired every 1 hour and removing the expired tickets every 24 hours by making request to the  api endpoints ` http://127.0.0.1:8000/expire/' ` and ` http://127.0.0.1:8000/deleteexpired/ ` respectively.
+
+
 ## Ticket Schema
 |Field|Type|Description|
 |-----|----|-----------|
