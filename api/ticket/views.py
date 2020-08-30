@@ -15,7 +15,7 @@ def Viewtimings(request,time):
     for i in ticket.objects.filter(timing=time):
         cnt=cnt+1
     data={}
-    if(cnt<=20):
+    if(cnt<20):
         data["ticket available"]=20-cnt
     else:
         data["status"]="no ticket available for this timing"
