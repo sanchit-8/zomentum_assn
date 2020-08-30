@@ -1,11 +1,9 @@
 from apscheduler.schedulers.background import BackgroundScheduler
-from .config import config_by_name
 import requests
 
 
-def create_app(config_name):
-    app.config.from_object(config_by_name[config_name])
-    db.init_app(app)
+def create_app():
+    
     scheduler = BackgroundScheduler()
     scheduler.add_job(set_ticket_expired, trigger='interval', seconds=1*60*60)
     scheduler.add_job(delete_expired_ticket, trigger='interval', seconds=24*60*60)
