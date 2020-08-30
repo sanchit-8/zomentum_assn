@@ -21,13 +21,22 @@ You have to design a REST interface for a movie theatre ticket booking system. I
 
 
 # Solution
-## technologies used:
+## Technologies used:
 
 1. django
 2. django rest_framework
 3. Database used : sqlite3
 4. Postman for testing
 
+## Ticket Schema
+|Field|Type|Description|
+|-----|----|-----------|
+|Id|Primary Key|Uniqely Identify each ticket|
+|Username|charfield(maxlen=50)|Name of the user|
+|PhoneNo|charfield(maxlen=10)|Phone no of the user|
+|timing|DateTimeField|timing of the ticket|
+|booking_time|DatetimeField|time at which ticket is booked|
+|is_expired|booleanFiled|Status of the ticket|
 
 ## Getting Started
 After cloning the file run the following commands in the project folder
