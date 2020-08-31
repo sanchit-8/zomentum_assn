@@ -15,7 +15,7 @@ def delete_expired_ticket():
     return
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(set_ticket_expired, trigger='interval', seconds=5*60*60)
+scheduler.add_job(set_ticket_expired, trigger='interval', seconds=1*60*60)
 scheduler.add_job(delete_expired_ticket, trigger='interval', seconds=24*60*60)
 scheduler.start()
 print("hello")
