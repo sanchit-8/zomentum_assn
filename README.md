@@ -21,6 +21,8 @@ You have to design a REST interface for a movie theatre ticket booking system. I
 
 
 # Solution
+This Project uses Django rest framework for implementing the api endpoints.
+
 ## Technologies used:
 
 1. django
